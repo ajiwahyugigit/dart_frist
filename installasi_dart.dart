@@ -8,9 +8,13 @@ void main(List<String> args) {
   //   print(list[index]);
   // }
 
-  for (int bilangan in list) {
+  // for (int bilangan in list) {
+  //   print(bilangan);
+  // }
+
+  list.forEach((bilangan) {
     print(bilangan);
-  }
+  });
 }
 
 
