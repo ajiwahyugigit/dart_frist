@@ -4,9 +4,9 @@ void main(List<String> args) {
   List<int> mylist = [];
   List<int> list = [1, 2, 3];
 
-  int e = list[0];
-
-  print(e);
+  for (int index = 0; index < list.length; index += 1) {
+    print(list[index]);
+  }
 }
 
 
