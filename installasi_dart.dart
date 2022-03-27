@@ -1,7 +1,7 @@
 // import 'dart:io';
 
 void main(List<String> args) {
-  List<int> mylist = [];
+  List<int> mylist = [1, 2, 3, 4, 5, 6, 7];
   List<int> list = [1, 2, 3];
 
   // for (int index = 0; index < list.length; index += 1) {
@@ -12,12 +12,16 @@ void main(List<String> args) {
   //   print(bilangan);
   // }
 
-  mylist.add(10);
-  mylist.addAll(list);
-  mylist.insert(3, 5);
-  mylist.insertAll(2, [20, 20]);
-  mylist.remove(20);
-  mylist.removeLast();
+  // mylist.add(10);
+  // mylist.addAll(list);
+  // mylist.insert(3, 5);
+  // mylist.insertAll(2, [20, 20]);
+  // mylist.remove(20);
+  // mylist.removeLast();
+
+  mylist.sort();
+
+  // list.clear();
 
   mylist.forEach((bilangan) {
     print(bilangan);
