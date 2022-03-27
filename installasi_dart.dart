@@ -3,15 +3,30 @@ import 'dart:io';
 void main(List<String> args) {
   int number = int.tryParse(stdin.readLineSync());
 
-  if (number == 0) {
-    print("bilangan nol");
-  } else if (number == 1) {
-    print("bilangan satu");
-  } else if (number == 2) {
-    print("bilangan dua");
-  } else {
-    print("bilangan lainya");
+  switch (number) {
+    case 0:
+      print("nol");
+      break;
+    case 1:
+      print("satu");
+      break;
+    case 2:
+      print("dua");
+      break;
+    default:
+      print("bilangan lainya");
   }
+
+  // 4
+  // if (number == 0) {
+  //   print("bilangan nol");
+  // } else if (number == 1) {
+  //   print("bilangan satu");
+  // } else if (number == 2) {
+  //   print("bilangan dua");
+  // } else {
+  //   print("bilangan lainya");
+  // }
 
   // 3
   // output = (number > 0) ? "positif" : "negatif atau nol";
