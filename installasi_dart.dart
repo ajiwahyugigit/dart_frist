@@ -1,5 +1,6 @@
-import 'package:installasi_dart/installasi_dart.dart' as installasi_dart;
+import 'dart:io';
 
 void main(List<String> arguments) {
-  print('AJI WAHYUGI: ${installasi_dart.calculate()}!');
+  String input = stdin.readLineSync();
+  print(input);
 }
