@@ -14,6 +14,10 @@ void main(List<String> args) {
 
   mylist.add(10);
   mylist.addAll(list);
+  mylist.insert(3, 5);
+  mylist.insertAll(2, [20, 20]);
+  mylist.remove(20);
+  mylist.removeLast();
 
   mylist.forEach((bilangan) {
     print(bilangan);
