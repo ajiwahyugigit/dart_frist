@@ -1,23 +1,29 @@
 // import 'dart:io';
 
-import 'dart:io';
-
-double luas_segiempat(double panjang, double lebar) {
-  double hasil;
-  hasil = panjang * lebar;
-  return hasil;
+int doMathOprator(int number1, int number2, Function oprator) {
+  return oprator(number1, number2);
 }
 
 void main(List<String> args) {
-  double p, l, luas;
-
-  p = double.tryParse(stdin.readLineSync());
-  l = double.tryParse(stdin.readLineSync());
-
-  luas = luas_segiempat(p, l);
-
-  print(luas);
+  print(doMathOprator(4, 2, (a, b) => a * b));
 }
+
+// double luas_segiempat(double panjang, double lebar) {
+//   double hasil;
+//   hasil = panjang * lebar;
+//   return hasil;
+// }
+
+// void main(List<String> args) {
+//   double p, l, luas;
+
+//   p = double.tryParse(stdin.readLineSync());
+//   l = double.tryParse(stdin.readLineSync());
+
+//   luas = luas_segiempat(p, l);
+
+//   print(luas);
+// }
 
 // void main(List<String> args) {
   
