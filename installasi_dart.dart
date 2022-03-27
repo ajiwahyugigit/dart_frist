@@ -1,12 +1,22 @@
 // import 'dart:io';
 
-int doMathOprator(int number1, int number2, Function oprator) {
-  return oprator(number1, number2);
+void main(List<String> args) {
+  List<int> mylist = [];
+  List<int> list = [1, 2, 3];
+
+  int e = list[0];
+
+  print(e);
 }
 
-void main(List<String> args) {
-  print(doMathOprator(4, 2, (a, b) => a * b));
-}
+
+// int doMathOprator(int number1, int number2, Function oprator) {
+//   return oprator(number1, number2);
+// }
+
+// void main(List<String> args) {
+//   print(doMathOprator(4, 2, (a, b) => a * b));
+// }
 
 // double luas_segiempat(double panjang, double lebar) {
 //   double hasil;
