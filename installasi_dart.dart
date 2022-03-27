@@ -1,12 +1,34 @@
 // import 'dart:io';
 
+import 'dart:io';
+
+double luas_segiempat(double panjang, double lebar) {
+  double hasil;
+  hasil = panjang * lebar;
+  return hasil;
+}
+
 void main(List<String> args) {
-  int a, b;
+  double p, l, luas;
 
-  a = 10;
-  b = ++a;
+  p = double.tryParse(stdin.readLineSync());
+  l = double.tryParse(stdin.readLineSync());
 
-  print(a.toString() + "-" + b.toString());
+  luas = luas_segiempat(p, l);
+
+  print(luas);
+}
+
+// void main(List<String> args) {
+  
+
+
+  // int a, b;
+
+  // a = 10;
+  // b = ++a;
+
+  // print(a.toString() + "-" + b.toString());
 
   // int i = 5;
   // while (i < 3) {
@@ -75,4 +97,4 @@ void main(List<String> args) {
   // } else {
   //   print("nol");
   // }
-}
+// }
