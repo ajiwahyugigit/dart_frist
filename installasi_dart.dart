@@ -12,7 +12,10 @@ void main(List<String> args) {
   //   print(bilangan);
   // }
 
-  list.forEach((bilangan) {
+  mylist.add(10);
+  mylist.addAll(list);
+
+  mylist.forEach((bilangan) {
     print(bilangan);
   });
 }
