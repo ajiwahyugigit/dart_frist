@@ -1,19 +1,26 @@
 // import 'dart:io';
 
 void main(List<String> args) {
-  int i = 5;
-  while (i < 3) {
-    print("hallo ke " + i.toString());
-    i += 1;
-  }
+  int a, b;
 
-  print("========");
+  a = 10;
+  b = ++a;
 
-  int x = 5;
-  do {
-    print("hello ke " + x.toString());
-    x += 1;
-  } while (x < 5);
+  print(a.toString() + "-" + b.toString());
+
+  // int i = 5;
+  // while (i < 3) {
+  //   print("hallo ke " + i.toString());
+  //   i += 1;
+  // }
+
+  // print("========");
+
+  // int x = 5;
+  // do {
+  //   print("hello ke " + x.toString());
+  //   x += 1;
+  // } while (x < 5);
 
   // for (int counter = 0; counter < 5; counter = counter + 1) {
   //   print("hello world!");
