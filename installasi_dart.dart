@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:installasi_dart/panjang.dart';
 
 void main(List<String> args) {
   // contoh object
@@ -6,16 +7,17 @@ void main(List<String> args) {
   double luasKotak1;
 
   kotak1 = new PersegiPanjang();
-  kotak1.panjang = 2;
+  kotak1.setPanjang(-2);
   kotak1.lebar = 3;
 
   kotak2 = PersegiPanjang();
-  kotak2.panjang = double.tryParse(stdin.readLineSync());
+  kotak2.setPanjang(double.tryParse(stdin.readLineSync()));
   kotak2.lebar = double.tryParse(stdin.readLineSync());
 
-  luasKotak1 = kotak1.hitungluas();
+  luasKotak1 = kotak1.luas;
 
-  print(luasKotak1 + kotak2.hitungluas());
+  print(luasKotak1 + kotak2.luas);
+  print(kotak1.getPanjang());
   // double panjang1, panjang2, lebar1, lebar2;
 
   // panjang1 = double.tryParse(stdin.readLineSync());
@@ -26,17 +28,17 @@ void main(List<String> args) {
   // print(panjang1 * lebar1 + panjang2 + lebar2);
 }
 
-// contoh class
+// // contoh class
 
-class PersegiPanjang {
-  double panjang;
-  double lebar;
+// class PersegiPanjang {
+//   double panjang;
+//   double lebar;
 
-  // contoh method
-  double hitungluas() {
-    return this.panjang * lebar;
-  }
-}
+//   // contoh method
+//   double hitungluas() {
+//     return this.panjang * lebar;
+//   }
+// }
 
 
 // void main(List<String> args) {
