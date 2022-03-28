@@ -1,8 +1,47 @@
-// import 'dart:io';
+import 'dart:io';
 
 void main(List<String> args) {
-  List<int> mylist = [1, 2, 3, 4, 5, 6, 7];
-  List<int> list = [1, 2, 3];
+  // contoh object
+  PersegiPanjang kotak1, kotak2;
+  double luasKotak1;
+
+  kotak1 = new PersegiPanjang();
+  kotak1.panjang = 2;
+  kotak1.lebar = 3;
+
+  kotak2 = PersegiPanjang();
+  kotak2.panjang = double.tryParse(stdin.readLineSync());
+  kotak2.lebar = double.tryParse(stdin.readLineSync());
+
+  luasKotak1 = kotak1.hitungluas();
+
+  print(luasKotak1 + kotak2.hitungluas());
+  // double panjang1, panjang2, lebar1, lebar2;
+
+  // panjang1 = double.tryParse(stdin.readLineSync());
+  // panjang2 = double.tryParse(stdin.readLineSync());
+  // lebar1 = double.tryParse(stdin.readLineSync());
+  // lebar2 = double.tryParse(stdin.readLineSync());
+
+  // print(panjang1 * lebar1 + panjang2 + lebar2);
+}
+
+// contoh class
+
+class PersegiPanjang {
+  double panjang;
+  double lebar;
+
+  // contoh method
+  double hitungluas() {
+    return this.panjang * lebar;
+  }
+}
+
+
+// void main(List<String> args) {
+//   List<int> mylist = [1, 2, 3, 4, 5, 6, 7];
+//   List<int> list = [1, 2, 3];
 
   // for (int index = 0; index < list.length; index += 1) {
   //   print(list[index]);
@@ -19,14 +58,14 @@ void main(List<String> args) {
   // mylist.remove(20);
   // mylist.removeLast();
 
-  mylist.sort();
+//   mylist.sort();
 
-  // list.clear();
+//   // list.clear();
 
-  mylist.forEach((bilangan) {
-    print(bilangan);
-  });
-}
+//   mylist.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
 
 
 // int doMathOprator(int number1, int number2, Function oprator) {
